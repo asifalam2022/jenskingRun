@@ -23,7 +23,7 @@ public class TestUtil extends TestBase {
 
 	//	public static String TESTDATA_SHEET_PATH ="‪E:\\e2e\\Automation_Testing\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 
-	public static String TestData_SHEET_PATH ="‪E:\\e2e\\Automation_Testing\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH ="‪E:\\e2e\\Automation_Testing\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
