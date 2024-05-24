@@ -21,8 +21,9 @@ public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-//	public static String TESTDATA_SHEET_PATH ="‪E:\\e2e\\Automation_Testing\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	//	public static String TESTDATA_SHEET_PATH ="‪E:\\e2e\\Automation_Testing\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 
+	public static String TestData_SHEET_PATH ="‪E:\\e2e\\Automation_Testing\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
@@ -83,7 +84,7 @@ public class TestUtil extends TestBase {
 
 		// jquery-growl w/ no frills
 		js.executeScript("$.growl({ title: 'GET', message: '/' });");
-//'"+color+"'"
+		//'"+color+"'"
 		if (messageType.equals("error")) {
 			js.executeScript("$.growl.error({ title: 'ERROR', message: '"+message+"' });");
 		}else if(messageType.equals("info")){
@@ -93,9 +94,9 @@ public class TestUtil extends TestBase {
 		}else
 			System.out.println("no error message");
 		// jquery-growl w/ colorized output
-//		js.executeScript("$.growl.error({ title: 'ERROR', message: 'your error message goes here' });");
-//		js.executeScript("$.growl.notice({ title: 'Notice', message: 'your notice message goes here' });");
-//		js.executeScript("$.growl.warning({ title: 'Warning!', message: 'your warning message goes here' });");
+		//		js.executeScript("$.growl.error({ title: 'ERROR', message: 'your error message goes here' });");
+		//		js.executeScript("$.growl.notice({ title: 'Notice', message: 'your notice message goes here' });");
+		//		js.executeScript("$.growl.warning({ title: 'Warning!', message: 'your warning message goes here' });");
 		Thread.sleep(5000);
 	}
 
